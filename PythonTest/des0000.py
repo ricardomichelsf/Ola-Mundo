@@ -1,0 +1,6 @@
+pre = float(input('Digite o preço: '))
+avi = pre - (pre * 0.10)
+par = pre + (pre *0.08)
+print('O valor do produto é: {}'.format(pre))
+print('Se pagamento for á vista tem 10% de desconto e sai por {}'.format(avi))
+print('Se pagamento for a prazo tem um aumento de 8% e sai por {}'.format(par))
