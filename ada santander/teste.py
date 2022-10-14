@@ -1,4 +1,4 @@
-"""pessoas = {'nome': 'Ricardo', 'sexo': 'M', 'idade': 32}
+pessoas = {'nome': 'Ricardo', 'sexo': 'M', 'idade': 32}
 pessoas['nome'] = 'Michel'
 pessoas['peso'] = 129.00
 print(f'O {pessoas["nome"]} tem {pessoas["idade"]} abos')
@@ -21,7 +21,7 @@ alunos = {'Augusto': [4.5, 7.0, 6.0, 3.0],
           'Marcelo': [9.0, 10.0, 7.0, 7.0]}
 
 for k, n in alunos.items():
-    print(f' {k} : {max(n)}')"""
+    print(f' {k} : {max(n)}')
 
 lista = ['a', 2, 'b', 'a', 'a']
 #lis = 0

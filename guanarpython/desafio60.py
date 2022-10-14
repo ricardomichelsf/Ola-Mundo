@@ -1,6 +1,5 @@
 '''num = int(input('Digite um número: '))
 cont = num
-fat = num * cont
 while cont > 1:
     cont -= 1
     num *= cont

@@ -1,11 +1,6 @@
 tb = int(input('Digite um número: '))
-print(f'{tb} x 1 = {tb * 1}')
-print(f'{tb} x 2 = {tb * 2}')
-print(f'{tb} x 3 = {tb * 3}')
-print(f'{tb} x 4 = {tb * 4}')
-print(f'{tb} x 5 = {tb * 5}')
-print(f'{tb} x 6 = {tb * 6}')
-print(f'{tb} x 7 = {tb * 7}')
-print(f'{tb} x 8 = {tb * 8}')
-print(f'{tb} x 9 = {tb * 9}')
-print(f'{tb} x 10 = {tb * 10}')
+num = 1
+while num <= 10:
+    print(f'{tb} x {num:2} = {tb * num:2}')
+    num += 1
+

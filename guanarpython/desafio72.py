@@ -6,7 +6,7 @@ cont = ('zero', 'um', 'dois', 'três', 'quatro',
 while True:
     num = int(input('Digte um número entre 0 e 20: '))
     if 0 <= num <= 20:
-        print(f'Voce digitou o num {cont[num]}')
+        print(f'Voce digitou o número {cont[num]}')
     else:
         print('Tente Novamente. ', end='')
     opc = input('Quer continuar? [S/N] ').strip().upper()

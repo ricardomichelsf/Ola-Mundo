@@ -26,22 +26,20 @@ class Disciplina:
         self.nome = nome
 
 
-class Tecnico(Pessoa, Funcionario):
+class Tecnico (Funcionario):
     def __init__(self, nome, endereco, fone, cpf, salario, cargo):
-        Pessoa.__init__(self, nome, endereco, fone, cpf)
-        Funcionario.__init__(self, salario)
+        super().__init__(nome, endereco, fone, cpf, salario)
         self.cargo = cargo
 
 
-class Professor(Pessoa, Funcionario):
+class Professor(Funcionario):
     def __init__(self, salario, nome, endereco, fone, cpf, titulacao):
-        Pessoa.__init__(self, nome, endereco, fone, cpf)
-        Funcionario.__init__(self, salario)
+        super().__init__(nome, endereco, fone, cpf, salario)
         self.titulacao = titulacao
         self.disciplina = []
 
     def incluir_disciplina(self, Disciplina):
-        self.displina.append(Disciplina)
+        self.disciplina.append(Disciplina)
 
 
 disciplina1 = Disciplina("Programação")

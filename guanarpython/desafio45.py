@@ -1,7 +1,7 @@
 from random import randint
 from time import sleep
-'''print('\033[1:34:40mVAMOS JOGAR JOKENPÔ\033[m')
-print("""Suas opçoes
+print('\033[1:34:40mVAMOS JOGAR JOKENPÔ\033[m')
+'''print("""Suas opçoes
 [ 1 ] PEDRA
 [ 2 ] PAPEL
 [ 3 ] TESOURA""")
@@ -47,46 +47,47 @@ else:
 print('='* 35)'''
 itens = ('Pedra', 'Papel', 'Tesoura')
 com = randint(0, 2)
-print('''Suas opções:
-[ 0 ] PEDRA
-[ 1 ] PAPEL
-[ 2 ] TESOURA''')
-jog = int(input('Qual é a sua jogada? '))
-sleep(0.2)
-print('JO')
-sleep(0.4)
-print('KEN')
-sleep(0.6)
-print('PO!!!')
-print('='* 30)
-print(f'Computador escolheu {itens[com]}')
-print(f'Você escolheu {itens[jog]}')
-print('='* 30)
-if com == 0:
-    if jog == 0:
-        print('\033[1mEMPATOU\033[m')
-    elif jog == 1:
-        print('\033[1mPERDI\033[m')
-    elif jog == 2:
-        print('\033[1mVENCI\033[m')
-    else:
+opcao = 'S'
+while opcao == "S":
+    print('''Suas opções:
+    [ 0 ] PEDRA
+    [ 1 ] PAPEL
+    [ 2 ] TESOURA''')
+    jog = int(input('Qual é a sua jogada? '))
+    while jog > 2:
         print('\033[1:31mOPÇÃO INVÁLIDA\033[m')
-elif com == 1:
-    if jog == 0:
-        print('\033[1mVENCI\033[m')
-    elif jog == 1:
-        print('\033[1mEMPATOU\033[m')
-    elif jog == 2:
-        print('\033[1mPERDI\033[m')
-    else:
-        print('\033[1:31mOPÇÃO INVÁLIDA\033[m')
-elif com == 2:
-    if jog == 0:
-        print('\033[1mPERDI\033[m')
-    elif jog == 1:
-        print('\033[1mVENCI\033[m')
-    elif jog == 2:
-        print('\033[1mEMPATOU\033[m')
-    else:
-        print('\033[1:31mOPÇÃO INVÁLIDA\033[m')
+        opcao = input('Quer jogar novamente [S/N]?: ').upper()
+        jog = int(input('Qual é a sua jogada? '))
+    sleep(0.2)
+    print('JO')
+    sleep(0.4)
+    print('KEN')
+    sleep(0.6)
+    print('PO!!!')
+    print('='* 30)
+    print(f'Computador escolheu {itens[com]}')
+    print(f'Você escolheu {itens[jog]}')
+    print('='* 30)
+    if com == 0:
+        if jog == 0:
+            print('\033[1mEMPATOU\033[m')
+        elif jog == 1:
+            print('\033[1mPERDI\033[m')
+        elif jog == 2:
+            print('\033[1mVENCI\033[m')
+    elif com == 1:
+        if jog == 0:
+            print('\033[1mVENCI\033[m')
+        elif jog == 1:
+            print('\033[1mEMPATOU\033[m')
+        elif jog == 2:
+            print('\033[1mPERDI\033[m')
+    elif com == 2:
+        if jog == 0:
+            print('\033[1mPERDI\033[m')
+        elif jog == 1:
+            print('\033[1mVENCI\033[m')
+        elif jog == 2:
+            print('\033[1mEMPATOU\033[m')
+    opcao = input('Quer jogar novamente [S/N]?: ').upper()
 

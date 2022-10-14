@@ -1,5 +1,4 @@
 valores = []
-mai = men = 0
 for v in range(0,5):
     valores.append(int(input(f'Digite um valor para a posicão {v}: ')))
 print('=='*30)

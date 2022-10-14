@@ -25,6 +25,4 @@ while num != 5:
     elif num == 4:
         n1 = float(input('Digite um valor: '))
         n2 = float(input('Digite um valor: '))
-    elif num > 5:
-        print('Número invalido')
 print('Fim do Programa')

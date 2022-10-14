@@ -1,7 +1,7 @@
 nome = input('Digite o seu nome: ').strip()
 print(nome.upper())
 print(nome.lower())
-print(len(''.join(nome.split())))
+print(''.join(nome.split()))
 #print(len(nome)-nome.count(' '))
 prn = nome.split()
 print(len(prn[0]))
