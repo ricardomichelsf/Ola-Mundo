@@ -30,6 +30,7 @@ loja = {
     }
 }
 print(loja['vendedor1']['nome'])
+loja.setdefault('vendedor2', 22) setdefault() verifica se ja existe uma chave com o nome senão existir ele cria uma nova chave
 
 """
 

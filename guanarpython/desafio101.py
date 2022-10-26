@@ -1,4 +1,4 @@
-def votar(idad):
+"""def votar(idad):
     from datetime import date
     atual = date.today().year
     idade = atual - idad
@@ -13,3 +13,4 @@ print('-='*25)
 print('Convacação para votar')
 nasc = int(input('Qual o ano que você nasceu? '))
 print(votar(nasc))
+"""
