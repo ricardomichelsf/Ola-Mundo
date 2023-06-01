@@ -1,0 +1,4 @@
+RIC: ['RICARDO', 'LIBE', datetime.datetime(2022, 12, 8, 19, 25, 45, 6508)]
+ BRU : ['BRUNA', 'HOME', datetime.datetime(2022, 12, 8, 19, 41, 40, 724325)]
+TATA : ['TAY', 'TERREO', '08/12/2022 19:46']
+RICK : ['RICARDO', 'JUV', '14/12/2022 22:58']

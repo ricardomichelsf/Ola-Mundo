@@ -1,17 +1,17 @@
 """
 Lisras 
 
-Listas em Python funcional como vetores/matrizes (arrays) em outras linguagens, com a diferença de serem DINAMICO e tambem podermos colocar tipo de dados.
+Listas em Python funcionam como vetores/matrizes (arrays) em outras linguagens, com a diferença de serem DINAMICO e tambem podermos colocar tipo de dados.
 
 Linguagens C/Java: Arrays
     - Possui tamanho e tipo de dado fixo;
-    Ou seja, nestas linguagens se voce criar um array doi tipo int e com tamanho 5, este array sera
-    Sempre do tipo interiro e poderá ter SEMPRE no máximo 5 valores.
+    Ou seja, nestas linguagens se voce criar um array do tipo int e com tamanho 5, este array sera
+    Sempre do tipo inteiro e poderá ter SEMPRE no máximo 5 valores.
 
 Já em Python;
-- Dinamica: Não possui tamanho fixo; ou seja. podemos criara lista e simplismente ir adicionando elementos;
+- Dinamica: Não possui tamanho fixo; ou seja. podemos criar a lista e simplismente ir adicionando elementos;
 - Qualquer tipo de dado; Não possuem tipo de dado fixo; ou seja. poodemos colocar qualquer tipo de dado.
-As listas em Python ~sao representadas por colchetes: []
+As listas em Python são representadas por colchetes: []
 
 type([])
 
@@ -51,7 +51,7 @@ print(lista1)
 lista1.append(42)
 print(lista1)
 
-lista1.append([8, 3, 11]) # Coloca a iasta como um elemento único
+lista1.append([8, 3, 11]) # Coloca a lista como um elemento único
 print(lista1)
 
 if [8, 3, 11] in lista1:
@@ -62,7 +62,7 @@ else:
 lista1.extend(123, 44, 67) # Coloca cada elemento da lista como valor adicional a lista
 print(lista1)
 
-Podemos innserir um novo elemento na lista informando a posição do indice
+Podemos inserir um novo elemento na lista informando a posição do indice
 OBS: Isso não substitui o valor inicial. O mesmo será deslocado para a direita da lista.
 lista1.insert(2, "Novo valor")
 print(lista1)
