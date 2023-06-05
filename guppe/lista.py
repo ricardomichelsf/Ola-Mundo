@@ -62,6 +62,9 @@ else:
 lista1.extend(123, 44, 67) # Coloca cada elemento da lista como valor adicional a lista
 print(lista1)
 
+Para modificar um elemento um uma lista, irá modificar o elemento no index marcado pelo novo elemento
+lista1[4] = 400
+
 Podemos inserir um novo elemento na lista informando a posição do indice
 OBS: Isso não substitui o valor inicial. O mesmo será deslocado para a direita da lista.
 lista1.insert(2, "Novo valor")
@@ -87,7 +90,7 @@ print(lista6)
 print(len(lista5))
 
 # Podemos remover facilmente o último elemento de uma lista
-OBS: O pop não somente remnove um elemento como tambem o retorna
+OBS: O pop não somente remove um elemento como tambem o retorna
 print(lista5)
 lista5.pop()
 print(lista5)
@@ -213,7 +216,7 @@ numeros = [5, 6, 7, 5, 8, 9, 10]
 # Em qual indice da lista esta o valor 6?
 print(numeros.index(6))
 
-# Em qual indeice da lista esta o vlaor 9?
+# Em qual indeice da lista esta o valor 9?
 print(numeros.index(9))
 
 # Obs: Retorna o indice do primeiro elemento encontrado
@@ -226,9 +229,9 @@ print(numeros.index(5, 2))
 # Podeomos fazer busca dentro de um range, inicio/fim
 print(numeros.index(8, 3, 6)) # Buscar o indice do valor 8, entre os inidce 3 a 6
 
-# REvisão de slicing
+# Revisão de slicing
 
-# lista[inicio:fin:passo]
+# lista[inicio:fim:passo]
 # range[inicio:fim:passo]
 
 # Trabalhando com slice de lista com o paramentro 'inicio
@@ -244,9 +247,9 @@ print(lista[:4])
 
 print(lista[1:3])
 
-# trabalhando com slice de lista com o arametro passo
+# trabalhando com slice de lista com o parametro passo
 
-print(lista[1::2]) # Começa no 1, vaoi ate o final de 2 em 2
+print(lista[1::2]) # Começa no 1, vai ate o final de 2 em 2
 
 # Invertendo valores em uma lista
 
@@ -317,7 +320,7 @@ nova.append(4)
 print(lista)
 print(nova)
 
-# Veja que utilizamos a copia via atribuição e copiamos os dados  da lista para a nova lista, mas
-# apos realizar a modificacao em uma das listas , essa modificação se refletiu em ambas as listas.
+# Veja que utilizamos a copia via atribuição e copiamos os dados da lista para a nova lista, mas
+# apos realizar a modificacao em uma das listas, essa modificação se refletiu em ambas as listas.
 # Isso em Python se chama Shallow copy
 
