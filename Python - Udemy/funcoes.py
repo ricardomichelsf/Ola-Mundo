@@ -61,4 +61,6 @@ Em Python, podemos inclusive criar variáveis do tipo de uma funçãoe executar 
 canta = canta_parabens
 
 canta()
+
+
 """
