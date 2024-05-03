@@ -7,11 +7,12 @@ while True:
     num = int(input('Digte um número entre 0 e 20: '))
     if 0 <= num <= 20:
         print(f'Voce digitou o número {cont[num]}')
+        opc = input('Quer continuar? [S/N] ').strip().upper()
+        if opc in 'Nn':
+            break
+        elif opc != 'S':
+            opc = input('Quer continuar? [S/N] ').strip().upper()
     else:
         print('Tente Novamente. ', end='')
-    opc = input('Quer continuar? [S/N] ').strip().upper()
-    if opc in 'Nn':
-        break
-    elif opc != 'S':
-        opc = input('Quer continuar? [S/N] ').strip().upper()
+
 
