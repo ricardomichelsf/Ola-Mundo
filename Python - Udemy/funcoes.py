@@ -62,5 +62,11 @@ canta = canta_parabens
 
 canta()
 
+Funções com retorno
 
+numeros = [1, 2, 3]
+ret_pop = numeros.pop()
+print(f'Retorno de pop : {ret_pop}')
+
+OBS: Em Python, qunado uma função não rertorna nenhum valor, o retorno é None
 """
