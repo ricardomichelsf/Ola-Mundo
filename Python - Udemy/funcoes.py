@@ -69,4 +69,82 @@ ret_pop = numeros.pop()
 print(f'Retorno de pop : {ret_pop}')
 
 OBS: Em Python, qunado uma função não rertorna nenhum valor, o retorno é None
+
+OBS: Funções Python que retornam valores, devem retornar estes valores com a palavra reservada return
+
+def quadrado_de_7():
+    retrun 7 * 7
+
+OBS: Sobre a palavra reservada return
+
+1 - Ela finaliza a função, ou seja, ela sai da execução da função;
+2 - Podemos ter, em uma função, diferentes returns;
+3 - Podemos, em uma função, retornar qualquer tipo de dado e até mesmo múltiplos valores;
+
+def outra_funcao():
+    rerturn 2, 3, 4, 5
+
+num1, num2, num3, num4 = outra_funcao()
+print(num1, num2, num3, num4)
+
+from random import random
+
+def sorteia_valores():
+    # gera um número randomico entre 0 e 1
+    valore = random()
+    if valor > 0.5:
+        return 'Cara'
+    return 'Coroa'
+
+print(sorteia_valores())
+
+
+# Funções com Parâmetros (de entrada)
+
+- Funções que recebem dados para serem processadas dentro da mesma;
+Se a gente pensar em um programa qualquer, geralmentemtemos;
+entrada -> processamwento -> saida
+
+Se a gente pensar em uma função, já sabemos que temos funções que;
+- Não possuem entrada;
+- Não possuem saída;
+- Possuem entrada mas não possuem saída;
+- Não possuem entrada mas possuem saída;
+- Possuem entrada e saída;
+
+def quadrado(numero):
+    return numero * numero
+
+print(quadrado(7))
+
+Funções podem ter n parâmetros de entrada. Ou seja, podemos receber como entrada em uma função
+quantos parâmetros forem necessaríos. Eles são separados por vírgulas.
+
+Nomeando parâmetros
+
+def nome_completo(nome, sobrenome):
+    return f'Seu nome completo é {nome} {sobrenome}'
+
+print(nome_completo('Angelica', 'Jolie'))
+
+A diferença entre Parâmetros e Argumentos
+
+Parâmetros são variaveís declaradas na definição de uma função;
+Argumentos são dados passados durante a execução de uma função;
+
+A ordem do parâmetros importa;
+
+nome = 'Felicity'
+sobrenome = 'Jones'
+
+print(nome_completo(sobrenome, nome))
+
+Argumentos nomerados (Keywords Arguments)
+
+Caso utilizarmos nomes dos parâmetros nos argumentos para informá-los, podemos utilizar qualquer ordem
+
+print(nome_completo(nome='Angelina', sobrenome='Jolie'))
+print(nome_completo(nome= nome, sobrenome= sobrenome))
+print(nome_completo(sobrenome='Marques', nome= 'Marcia'))
+
 """

@@ -37,6 +37,6 @@ res = Counter(palavras)
 
 print(res)
 
-# Encontrnado as 5 palavras com mais ocorrencia no texto
+# Encontrando as 5 palavras com mais ocorrencia no texto
 print(res.most_common(5))
 [('e', 5), ('é', 3), ('sob', 3), ('um', 2), ('projeto', 2)]
