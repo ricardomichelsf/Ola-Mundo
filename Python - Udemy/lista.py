@@ -1,7 +1,8 @@
 """
 Lisras 
 
-Listas em Python funcionam como vetores/matrizes (arrays) em outras linguagens, com a diferença de serem DINAMICO e tambem podermos colocar tipo de dados.
+Listas em Python funcionam como vetores/matrizes (arrays) em outras linguagens, com a diferença de serem DINAMICO 
+e tambem podermos colocar tipo de dados.
 
 Linguagens C/Java: Arrays
     - Possui tamanho e tipo de dado fixo;
