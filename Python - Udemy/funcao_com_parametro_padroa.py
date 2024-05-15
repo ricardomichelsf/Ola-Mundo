@@ -106,4 +106,5 @@ def fora():
     return dentro()
 
 print(fora())
+
 """
